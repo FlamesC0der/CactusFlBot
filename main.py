@@ -5,8 +5,7 @@ import logging
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
 
-
-from app.handlers import router
+from app.handlers.handlers import router
 
 
 async def main():
