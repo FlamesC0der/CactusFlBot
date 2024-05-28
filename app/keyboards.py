@@ -1,7 +1,7 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 main = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="Settings", callback_data="settings")]
+    [InlineKeyboardButton(text="⚙️Settings", callback_data="settings")]
 ])
 
 settings = InlineKeyboardMarkup(inline_keyboard=[

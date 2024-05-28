@@ -47,7 +47,7 @@ async def settings_emoji(callback: CallbackQuery, state: FSMContext):
     settings = get_settings()
 
     await callback.message.edit_text(
-        f"⚙️Settings > AutoEmoji\n\nCurent:{settings['auto_reaction']}\n\nSend me emoji to set auto reaction!",
+        f"⚙️Settings > AutoEmoji\n\nCurrent:{settings['auto_reaction']}\n\nSend me emoji to set auto reaction!",
         reply_markup=kb.settings_emoji,
     )
 
@@ -72,7 +72,7 @@ async def settings_auto_comment(callback: CallbackQuery, state: FSMContext):
     settings = get_settings()
 
     await callback.message.edit_text(
-        f"⚙️Settings > AutoEmoji\n\nCurent:\n{settings['auto_comment']}\n\nSend me FirstMessage to send auto comment!",
+        f"⚙️Settings > AutoEmoji\n\nCurrent:\n{settings['auto_comment']}\n\nSend me auto comment text!",
         reply_markup=kb.settings_first_message
     )
 
